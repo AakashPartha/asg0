@@ -100,6 +100,6 @@ function angleBetween(v1, v2) {
 
 function areaTriangle(v1, v2) {
     let cross = Vector3.cross(v1, v2);
-    let area = Math.abs(cross) / 2;
+    let area = cross.magnitude() / 2;
     console.log("Area of triangle:", area);
 }
